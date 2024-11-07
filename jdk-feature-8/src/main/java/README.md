@@ -1,4 +1,6 @@
 # Get Start
+## 思维导图
+![img.png](img.png)
 ## 原文url: 
 * lambda: https://pdai.tech/md/java/java8/java8-stream.html
 * optional: https://pdai.tech/md/java/java8/java8-optional.html

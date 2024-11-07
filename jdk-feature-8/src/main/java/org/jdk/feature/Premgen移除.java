@@ -21,12 +21,12 @@ import java.util.ArrayList;
  * PremGen space是Oracle-Sun Hotspot才有的。其他没有
  *
  */
-public class Premgen {
+public class Premgen移除 {
 
 
   public static void main(String[] args) {
     try {
-      URL url = new File("/Users/zhaoqiang/Downloads").toURI().toURL();
+      URL url = new File("D:\\Users\\zhaoqianng\\IdeaProjects\\JDK-feature\\jdk-feature-8\\target\\classes").toURI().toURL();
       //获取有关类型加载的JMX接口
       ClassLoadingMXBean loadingBean = ManagementFactory.getClassLoadingMXBean();
 
@@ -38,9 +38,9 @@ public class Premgen {
         urlClassLoader.loadClass("ClassAForTestOOm");
 
         //显示数量信息(共加载过的类型数目，当前还有效的类型数目，已经被卸载的类型数目)
-        System.out.println("total: " + loadingBean.getTotalLoadedClassCount());
-        System.out.println("active: " + loadingBean.getLoadedClassCount());
-        System.out.println("unloaded: " + loadingBean.getUnloadedClassCount());
+//        System.out.println("total: " + loadingBean.getTotalLoadedClassCount());
+//        System.out.println("active: " + loadingBean.getLoadedClassCount());
+//        System.out.println("unloaded: " + loadingBean.getUnloadedClassCount());
       }
 
     } catch (Exception e) {
