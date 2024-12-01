@@ -1,7 +1,7 @@
-package org.jdk.feature.featuretest;
+package org.jdk.feature;
 
-import java.lang.ref.WeakReference;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TestStackWalker {
 
@@ -35,31 +35,13 @@ public class TestStackWalker {
 //            bytes.add(new WeakReference<>(new Object())); // 1M
 //        }
 
-        Thread.currentThread().setName("main");
         Map<Integer, String> map = new HashMap<>();
         int i = 0;
         while (true) {
-//            Thread.sleep(10000);
+            Thread.sleep(10000);
             map.put(i, String.valueOf(i++));
         }
 
-        // 内存泄露
-//        Timer timer = new Timer();
-//        TimerTask task = new TimerTask() {
-//            @Override
-//            public void run() {
-//                System.out.println("Task is running...");
-//            }
-//        };
-//
-//        timer.scheduleAtFixedRate(task, 0, 1000);
-//
-//        // 程序运行 10 秒
-//        try {
-//            Thread.sleep(10000);  // 10 秒后退出
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
 
     }
 }
